@@ -11,23 +11,16 @@ body {
 
 .fragmented {
     position: relative;
-
-    width: 650px;
+    width: 700px;
     min-height: 600px;
-
     margin: 60px auto;
     padding: 100px 70px;
-
     box-sizing: border-box;
-
     background: linear-gradient(
         to bottom,
-        #8b0000,
-        #300000,
-        #080000
+        #9b000a,
+        #730000,
     );
-
-    text-align: center;
 
     clip-path: polygon(50% 0, 84% 30%, 84% 75%, 51% 100%, 16% 75%, 16% 31%);
 }
@@ -38,13 +31,18 @@ body {
 .content-area {
     position: relative;
     z-index: 2;
-
     width: 100%;
     max-width: 500px;
-
     margin: auto;
+    background-color:#390000
 }
 
+.split-border-square {
+  border-width: 4px;
+  border-style: solid;
+  /* Both colors meet exactly at 50% */
+  border-image: linear-gradient(to right, #390000 50%, #ffbd00 50%) 1;
+}
 
 /* TITLE */
 
