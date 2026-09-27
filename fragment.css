@@ -81,9 +81,7 @@ body {
 
 .content {
     color: #e6d6d6;
-
     font-size: 14px;
     line-height: 1.7;
-
-    text-align: center;
+    text-align: justify;
 }
