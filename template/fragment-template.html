@@ -15,7 +15,9 @@ body {
 
 
 /* =================================
-   ENTIRE DIAMOND TEMPLATE
+   MAIN TEMPLATE
+   POINTED TOP + BOTTOM
+   STRAIGHT SIDES
    ================================= */
 
 .fragmented {
@@ -35,12 +37,18 @@ body {
         #390000
     );
 
-    /* TRUE DIAMOND */
+    /*
+       POINTED TOP AND BOTTOM
+       STRAIGHT LEFT AND RIGHT SIDES
+    */
+
     clip-path: polygon(
         50% 0%,
-        100% 50%,
+        100% 12%,
+        100% 88%,
         50% 100%,
-        0% 50%
+        0% 88%,
+        0% 12%
     );
 
     display: flex;
@@ -131,7 +139,7 @@ body {
 
     line-height: 1.7;
 
-    /* JUSTIFIED BODY TEXT */
+    /* JUSTIFIED TEXT */
     text-align: justify;
 
     /* SCROLLING */
@@ -184,12 +192,11 @@ body {
 
             Your character information, biography,
             plot, or other writing can sit inside
-            the separate center box.
+            this separate box.
 
-            The body text will automatically be
-            justified, and once the text reaches
-            the height of the box, it will scroll
-            vertically.
+            The text is justified automatically.
+            When you add more text than the box
+            can hold, it will scroll vertically.
 
         </div>
 
