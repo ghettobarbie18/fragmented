@@ -14,83 +14,62 @@ body {
 }
 
 
-/* MAIN TEMPLATE */
+/* =================================
+   ENTIRE DIAMOND TEMPLATE
+   ================================= */
 
 .fragmented {
     position: relative;
+
     width: 650px;
     height: 600px;
+
     margin: 60px auto;
-    padding: 100px 70px;
+
     box-sizing: border-box;
+
     background: linear-gradient(
         to bottom,
-        ##9b000a,
+        #9b000a,
         #730000,
+        #390000
     );
 
-    text-align: center;
+    /* TRUE DIAMOND */
+    clip-path: polygon(
+        50% 0%,
+        100% 50%,
+        50% 100%,
+        0% 50%
+    );
 
-    /* POINTED TOP + BOTTOM, STRAIGHT SIDES */
-    clip-path: polygon(50% 0, 84% 30%, 84% 75%, 51% 100%, 16% 75%, 16% 31%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/* INNER TEXT AREA */
+/* =================================
+   INNER CONTENT
+   ================================= */
 
 .content-area {
     position: relative;
     z-index: 2;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    background-color:#390000
-}
 
-.split-border-square {
-  border-width: 4px;
-  border-style: solid;
-  /* Both colors meet exactly at 50% */
-  border-image: linear-gradient(to right, #390000 50%, #ffbd00 50%) 1;
-}
+    width: 480px;
 
-/* SCROLLING TEXT AREA */
+    padding: 20px 35px;
 
-.content {
-    width: 100%;
-    max-width: 450px;
-    height: 250px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 10px 20px;
     box-sizing: border-box;
-    color: white;
-    font-size: 14px;
-    line-height: 1.7;
-    text-align: justify;
+
+    text-align: center;
 }
 
 
-/* SCROLLBAR */
-
-.content::-webkit-scrollbar {
-    width: 6px;
-}
-
-.content::-webkit-scrollbar-track {
-    background: #160000;
-}
-
-.content::-webkit-scrollbar-thumb {
-    background: #8b0000;
-}
-
-.content::-webkit-scrollbar-thumb:hover {
-    background: #c00000;
-}
-
-
-/* TITLE */
+/* =================================
+   TITLE
+   ================================= */
 
 .title {
     color: #ffb000;
@@ -109,7 +88,9 @@ body {
 }
 
 
-/* QUOTE */
+/* =================================
+   QUOTE
+   ================================= */
 
 .quote {
     color: #d8c7c7;
@@ -117,23 +98,71 @@ body {
     font-size: 14px;
     font-style: italic;
 
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 
-/* TEXT */
+/* =================================
+   SEPARATE BODY TEXT BOX
+   ================================= */
 
 .content {
+    width: 100%;
+    height: 250px;
+
+    box-sizing: border-box;
+
+    padding: 18px 22px;
+
+    background: #390000;
+
+    border: 4px solid transparent;
+
+    border-image:
+        linear-gradient(
+            to right,
+            #390000 50%,
+            #ffbd00 50%
+        ) 1;
+
     color: #e6d6d6;
 
     font-size: 14px;
+
     line-height: 1.7;
 
-    text-align: center;
+    /* JUSTIFIED BODY TEXT */
+    text-align: justify;
+
+    /* SCROLLING */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   SCROLLBAR
+   ================================= */
+
+.content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: #160000;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #8b0000;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: #c00000;
 }
 
 </style>
 </head>
+
 
 <body>
 
@@ -150,13 +179,18 @@ body {
         </div>
 
         <div class="content">
+
             Your text goes here.
 
-            Your character information,
-            biography, plot, or other writing
-            can sit inside the center of the
-            template while the sides remain
-            completely straight.
+            Your character information, biography,
+            plot, or other writing can sit inside
+            the separate center box.
+
+            The body text will automatically be
+            justified, and once the text reaches
+            the height of the box, it will scroll
+            vertically.
+
         </div>
 
     </div>
