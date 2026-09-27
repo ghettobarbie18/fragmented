@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,19 +23,21 @@ body {
 
 .fragmented {
     position: relative;
+
     width: 650px;
     height: 600px;
-    margin: 60px auto;
-    box-sizing: border-box;
-    background-image: url("YOUR-IMAGE-URL-HERE");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-    /*
-       POINTED TOP AND BOTTOM
-       STRAIGHT LEFT AND RIGHT SIDES
-    */
 
+    margin: 60px auto;
+
+    box-sizing: border-box;
+
+    /* BACKGROUND IMAGE */
+    background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/123122139_pTAmDQzNtr21Zlx.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* POINTED TOP + BOTTOM / STRAIGHT SIDES */
     clip-path: polygon(
         50% 0%,
         100% 12%,
@@ -57,9 +60,13 @@ background-repeat: no-repeat;
 .content-area {
     position: relative;
     z-index: 2;
+
     width: 480px;
+
     padding: 20px 35px;
+
     box-sizing: border-box;
+
     text-align: center;
 }
 
@@ -70,13 +77,17 @@ background-repeat: no-repeat;
 
 .title {
     color: #ffb000;
+
     font-size: 32px;
     font-weight: bold;
+
     letter-spacing: 6px;
     text-transform: uppercase;
+
     text-shadow:
         0 0 5px #ff0000,
         0 0 12px #8b0000;
+
     margin-bottom: 15px;
 }
 
@@ -87,35 +98,51 @@ background-repeat: no-repeat;
 
 .quote {
     color: #d8c7c7;
+
     font-size: 14px;
     font-style: italic;
+
     margin-bottom: 20px;
 }
 
 
 /* =================================
-   SEPARATE BODY TEXT BOX
+   BODY TEXT BOX
+   LEFT + RIGHT GRADIENT BORDERS
    ================================= */
 
 .content {
     width: 100%;
     height: 250px;
+
     box-sizing: border-box;
+
     padding: 18px 22px;
-    background: #390000;
-    border: 4px solid transparent;
+
+    background: rgba(57, 0, 0, 0.88);
+
+    /* LEFT + RIGHT ONLY */
+    border-left: 4px solid;
+    border-right: 4px solid;
+
     border-image:
         linear-gradient(
-            to right,
-            #390000 50%,
-            #ffbd00 50%
+            to bottom,
+            #390000,
+            #8b0000,
+            #ff0000,
+            #ffbd00,
+            #8b0000,
+            #390000
         ) 1;
 
     color: #e6d6d6;
+
     font-size: 14px;
+
     line-height: 1.7;
 
-    /* JUSTIFIED TEXT */
+    /* JUSTIFIED BODY TEXT */
     text-align: justify;
 
     /* SCROLLING */
@@ -170,9 +197,9 @@ background-repeat: no-repeat;
             plot, or other writing can sit inside
             this separate box.
 
-            The text is justified automatically.
-            When you add more text than the box
-            can hold, it will scroll vertically.
+            The body text is justified and will
+            automatically scroll once it reaches
+            the maximum height of the box.
 
         </div>
 
@@ -182,3 +209,4 @@ background-repeat: no-repeat;
 
 </body>
 </html>
+```
