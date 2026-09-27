@@ -12,7 +12,7 @@ body {
 .fragmented {
     position: relative;
     width: 700px;
-    min-height: 600px;
+    height: 600px;
     margin: 60px auto;
     padding: 100px 70px;
     box-sizing: border-box;
