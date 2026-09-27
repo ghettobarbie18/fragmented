@@ -6,48 +6,58 @@
 
 <style>
 
-/* PAGE BACKGROUND */
-
 body {
     margin: 0;
-    padding: 40px 0;
+    padding: 60px 0;
     background: #080000;
     font-family: Georgia, serif;
 }
 
 
-/* DIAMOND TEMPLATE */
+/* MAIN TEMPLATE */
 
 .fragmented {
-    width: 650px;
-    height: 650px;
-    margin: 60px auto;
+    position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 650px;
+    min-height: 600px;
+
+    margin: 60px auto;
+    padding: 100px 70px;
 
     box-sizing: border-box;
-    padding: 140px;
 
     background: linear-gradient(
-        135deg,
+        to bottom,
         #8b0000,
         #300000,
         #080000
     );
 
-    border: 8px solid #5c0000;
+    text-align: center;
 
+    /* POINTED TOP + BOTTOM, STRAIGHT SIDES */
     clip-path: polygon(
         50% 0%,
-        100% 50%,
+        100% 8%,
+        100% 92%,
         50% 100%,
-        0% 50%
+        0% 92%,
+        0% 8%
     );
+}
 
-    text-align: center;
+
+/* INNER TEXT AREA */
+
+.content-area {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: auto;
 }
 
 
@@ -66,7 +76,7 @@ body {
         0 0 5px #ff0000,
         0 0 12px #8b0000;
 
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 
@@ -78,11 +88,11 @@ body {
     font-size: 14px;
     font-style: italic;
 
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 
-/* CENTER TEXT */
+/* TEXT */
 
 .content {
     color: #e6d6d6;
@@ -90,34 +100,36 @@ body {
     font-size: 14px;
     line-height: 1.7;
 
-    max-width: 300px;
-
     text-align: center;
 }
 
 </style>
 </head>
 
-
 <body>
 
 <div class="fragmented">
 
-    <div class="title">
-        FRAGMENTED
-    </div>
+    <div class="content-area">
 
-    <div class="quote">
-        Beauty born from darkness.
-    </div>
+        <div class="title">
+            FRAGMENTED
+        </div>
 
-    <div class="content">
-        Your text goes here.
+        <div class="quote">
+            Beauty born from darkness.
+        </div>
 
-        Your character information,
-        biography, plot, or other writing
-        can sit right in the center of
-        the diamond.
+        <div class="content">
+            Your text goes here.
+
+            Your character information,
+            biography, plot, or other writing
+            can sit inside the center of the
+            template while the sides remain
+            completely straight.
+        </div>
+
     </div>
 
 </div>
