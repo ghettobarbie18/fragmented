@@ -107,7 +107,7 @@ body {
 /* QUOTE */
 .quote {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
 
     text-align: center;
 
@@ -117,7 +117,7 @@ body {
 
     font-size: 20px;
     font-weight: 400;
-    letter-spacing:2px;
+    letter-spacing: 3px;
 
     white-space: nowrap;
 
