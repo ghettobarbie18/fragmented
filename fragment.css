@@ -82,7 +82,7 @@ body {
     position: absolute;
 
     left: -125px;
-    top: 100px;
+    top: 50px;
 
     width: 250px;
 
@@ -103,8 +103,8 @@ body {
 .quote {
     position: absolute;
 
-    right: -125px;
-    bottom: 100px;
+    right: 20px;
+    bottom: 250px;
 
     width: 250px;
 
