@@ -18,20 +18,19 @@ background-repeat: no-repeat !important;
 
 /* CONTENT GROUP */
 .fragmented .content-area {
-position: absolute !important;
+    position: absolute !important;
 
-```
-width: 400px !important;
+    width: 400px !important;
+    min-width: 400px !important;
+    max-width: 400px !important;
 
-left: 50% !important;
-top: 70% !important;
+    left: 50% !important;
+    top: 70% !important;
 
-margin: 0 !important;
-padding: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 
-transform: translate(-50%, -50%) !important;
-```
-
+    transform: translate(-50%, -50%) !important;
 }
 
 /* TITLE */
