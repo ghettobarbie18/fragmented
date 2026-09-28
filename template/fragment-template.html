@@ -4,11 +4,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Fragmented</title>
 
-    <!-- Your external CSS file -->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/fragment.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        body {
+            margin: 0;
+            padding: 40px 0;
+
+            background: #080808;
+
+            font-family: Georgia, serif;
+        }
+
+
+        /* =========================
+           MAIN TEMPLATE BACKGROUND
+        ========================= */
+
+        .fragmented {
+            position: relative;
+
+            width: 900px;
+            height: 950px;
+
+            margin: 40px auto;
+
+            background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
+
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: visible;
+        }
+
+
+        /* =========================
+           CENTER CONTENT
+        ========================= */
+
+        .content-area {
+            position: absolute;
+
+            width: 400px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+
+        /* =========================
+           TITLE
+           ABOVE TEXT BOX
+        ========================= */
+
+        .title {
+            position: relative;
+
+            width: 100%;
+
+            margin-bottom: 15px;
+
+            text-align: center;
+
+            color: #c89b3c;
+
+            font-family: "My Soul", cursive;
+
+            font-size: 36px;
+            font-weight: 400;
+            font-style: normal;
+
+            letter-spacing: 4px;
+
+            white-space: nowrap;
+
+            text-shadow:
+                0 0 5px #000,
+                0 0 12px #000,
+                0 0 20px #300000;
+        }
+
+
+        /* =========================
+           MAIN SCROLLING TEXT BOX
+        ========================= */
+
+        .content {
+            width: 400px;
+            height: 300px;
+
+            padding: 25px 30px;
+
+            box-sizing: border-box;
+
+            background: rgba(57, 0, 0, 0.88);
+
+            color: #e6dada;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 14px;
+
+            font-weight: normal;
+
+            line-height: 1.7;
+
+            text-align: justify;
+
+            overflow-y: auto;
+
+            /* Gradient Border */
+            border: 2px solid transparent;
+
+            border-image:
+                linear-gradient(
+                    135deg,
+                    #300000,
+                    #a30000,
+                    #d4a84f,
+                    #a30000,
+                    #300000
+                ) 1;
+
+            /* Pointed Top And Bottom */
+            clip-path: polygon(
+                0 8%,
+                50% 0,
+                100% 8%,
+                100% 92%,
+                50% 100%,
+                0 92%
+            );
+        }
+
+
+        /* =========================
+           QUOTE
+           BELOW TEXT BOX
+        ========================= */
+
+        .quote {
+            position: relative;
+
+            width: 100%;
+
+            margin-top: 15px;
+
+            text-align: center;
+
+            color: #d8caca;
+
+            font-family: "Splash", cursive;
+
+            font-size: 22px;
+
+            font-weight: 400;
+
+            font-style: normal;
+
+            white-space: nowrap;
+
+            text-shadow:
+                0 0 5px #000,
+                0 0 10px #000,
+                0 0 15px #300000;
+        }
+
+
+        /* =========================
+           SCROLLBAR
+        ========================= */
+
+        .content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .content::-webkit-scrollbar-track {
+            background: #160000;
+        }
+
+        .content::-webkit-scrollbar-thumb {
+            background: #6e0000;
+        }
+
+
+        /* =========================
+           FIREFOX SCROLLBAR
+        ========================= */
+
+        .content {
+            scrollbar-width: thin;
+            scrollbar-color: #6e0000 #160000;
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
@@ -16,12 +224,20 @@
 
         <div class="content-area">
 
-            <!-- TITLE -->
+
+            <!-- =====================
+                 TITLE
+            ====================== -->
+
             <div class="title">
                 Dulce Nocturne
             </div>
 
-            <!-- MAIN SCROLLING TEXT BOX -->
+
+            <!-- =====================
+                 TEXT BOX
+            ====================== -->
+
             <div class="content">
 
                 <p>
@@ -31,25 +247,26 @@
 
                 <p>
                     Add as much text as you want. The box will scroll
-                    vertically once the content becomes longer than the
-                    available space.
+                    vertically once the content becomes longer than
+                    the available space.
                 </p>
 
                 <p>
                     You can replace this text with your actual character,
-                    story, profile, or other content.
+                    story, profile, biography, or other content.
+                </p>
+
+                <p>
+                    Continue adding your content here.
                 </p>
 
             </div>
 
-            <!-- QUOTE -->
+
+            <!-- =====================
+                 QUOTE
+            ====================== -->
+
             <div class="quote">
-                “Some things are better left fragmented.”
-            </div>
-
-        </div>
-
-    </div>
-
-</body>
-</html>
+                Some things are better left fragmented.
+```
