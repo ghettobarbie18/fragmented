@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 40px 0;
+    background: #080808;
+    font-family: Georgia, serif;
+}
+
+
+/* MAIN TEMPLATE */
+.fragmented {
+    position: relative;
+
+    width: 900px;
+    height: 950px;
+
+    margin: 40px auto;
+
+    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: visible;
+}
+
+
 /* CONTENT GROUP */
 .content-area {
     position: absolute;
+
     width: 400px;
+
     left: 50%;
-    top: 78%;
+    top: 73%;
+
     transform: translate(-50%, -50%);
 }
 
@@ -22,6 +56,7 @@
     color: #c89b3c;
 
     font-family: "My Soul", cursive;
+
     font-size: 36px;
     font-weight: 400;
 
@@ -30,9 +65,10 @@
     white-space: nowrap;
 
     text-shadow:
-        0 0 5px #000,
-        0 0 12px #000,
-        0 0 20px #300000;
+        0 0 5px #ffffff,
+        0 0 10px #c00000,
+        0 0 20px #c00000,
+        0 0 35px #700000;
 }
 
 
@@ -50,7 +86,9 @@
     color: #e6dada;
 
     font-family: Georgia, "Times New Roman", serif;
+
     font-size: 14px;
+
     line-height: 1.7;
 
     text-align: justify;
@@ -88,12 +126,33 @@
     color: #d8caca;
 
     font-family: "Splash", cursive;
+
     font-size: 22px;
 
-    white-space: nowrap;
+    font-weight: 400;
 
+    white-space: nowrap;
     text-shadow:
         0 0 5px #000,
         0 0 10px #000,
         0 0 15px #300000;
+}
+
+
+/* SCROLLBAR */
+.content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: #160000;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #6e0000;
+}
+
+.content {
+    scrollbar-width: thin;
+    scrollbar-color: #6e0000 #160000;
 }
