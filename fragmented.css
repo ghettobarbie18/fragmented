@@ -49,6 +49,7 @@ padding: 0 !important;
 
 box-sizing: border-box !important;
 
+float:left;
 text-align: left !important;
 
 color: #c89b3c !important;
@@ -135,7 +136,7 @@ color: #ad9c9a !important;
 font-family: "Protest Revolution", cursive !important;
 font-size: 18px !important;
 font-weight: 400 !important;
-line-height: 1.25 !important;
+line-height: 1 !important;
 
 white-space: normal !important;
 
