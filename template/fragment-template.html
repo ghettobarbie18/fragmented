@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,137 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragmented</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 0;
-            background: #080808;
-            font-family: Georgia, serif;
-        }
-
-        /* MAIN BACKGROUND */
-        .fragmented {
-            position: relative;
-            width: 900px;
-            height: 950px;
-            margin: 40px auto;
-
-            background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            overflow: visible;
-        }
-
-        /* CENTER CONTENT AREA */
-        .content-area {
-            position: absolute;
-            width: 400px;
-            margin-top:200px;
-
-            left: 50%;
-            top: 50%;
-
-            transform: translate(-50%, -50%);
-        }
-
-        /* TITLE - LEFT DIAGONAL */
-        .title {
-            position: absolute;
-
-            left: 20px;
-            top: 50px;
-
-            width: 250px;
-
-            color: #c89b3c;
-            font-size: 30px;
-            font-weight: bold;
-            font-family: "My Soul", cursive;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            white-space: nowrap;
-
-            text-shadow:
-                0 0 5px #000,
-                0 0 12px #000;
-        }
-
-        /* QUOTE - RIGHT DIAGONAL */
-        .quote {
-            position: absolute;
-
-            right: 25px;
-            bottom: 250px;
-
-            width: 250px;
-
-            color: #d8caca;
-            font-size: 14px;
-            font-style: italic;
-            font-family: "Splash", cursive;
-            white-space: nowrap;
-
-            text-shadow:
-                0 0 5px #000,
-                0 0 10px #000;
-        }
-
-        /* SCROLLING TEXT BOX */
-        .content {
-            width: 100%;
-            height: 280px;
-
-            padding: 18px 22px;
-            box-sizing: border-box;
-
-            background: rgba(57, 0, 0, 0.88);
-            color: #e6dada;
-
-            font-size: 14px;
-            line-height: 1.7;
-            text-align: justify;
-
-            overflow-y: auto;
-
-             /* Gradient border */
-    border: 2px solid transparent;
-    border-image: linear-gradient(
-        135deg,
-        #300000,
-        #a30000,
-        #d4a84f,
-        #a30000,
-        #300000
-    ) 1;
-
-         .splash-regular {
-  font-family: "Splash", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-        .my-soul-regular {
-  font-family: "My Soul", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-        }
-
-        /* SCROLLBAR */
-        .content::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .content::-webkit-scrollbar-track {
-            background: #160000;
-        }
-
-        .content::-webkit-scrollbar-thumb {
-            background: #6e0000;
-        }
-    </style>
+    <!-- Your external CSS file -->
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/fragment.css">
 </head>
 
 <body>
@@ -149,8 +21,9 @@
                 Dulce Nocturne
             </div>
 
-            <!-- MAIN TEXT BOX -->
+            <!-- MAIN SCROLLING TEXT BOX -->
             <div class="content">
+
                 <p>
                     Your text goes here. This is the main content area
                     where you can place your writing.
@@ -166,6 +39,7 @@
                     You can replace this text with your actual character,
                     story, profile, or other content.
                 </p>
+
             </div>
 
             <!-- QUOTE -->
