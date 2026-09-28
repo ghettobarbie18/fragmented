@@ -1,35 +1,245 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Fragmented - Dulce Nocturne</title>
 
-    <!-- Google Fonts -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=My+Soul&family=Protest+Revolution&display=swap"
+        rel="stylesheet"
+    >
 
-    <!-- Fragmented CSS -->
-    <link rel="stylesheet" href="https://ghettobarbie18.github.io/fragmented/fragmented.css">
+    <style>
+
+        /* ==============================
+           FRAGMENTED TEMPLATE
+           ============================== */
+
+        .fragmented {
+            position: relative;
+            width: 900px;
+            height: 950px;
+            margin: 40px auto;
+            padding: 0;
+
+            background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
+
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        /* ==============================
+           CONTENT AREA
+           ============================== */
+
+        .fragmented .content-area {
+            position: absolute;
+
+            width: 400px;
+
+            left: 50%;
+            top: 70%;
+
+            margin: 0;
+            padding: 0;
+
+            transform: translate(-50%, -50%);
+        }
+
+
+        /* ==============================
+           TITLE
+           ============================== */
+
+        .fragmented .title {
+            display: block;
+
+            width: 400px;
+            height: auto;
+
+            position: relative;
+
+            left: 0;
+            top: 0;
+
+            margin: 0 0 -25px 0;
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-align: left;
+
+            color: #c89b3c;
+
+            font-family: "My Soul", cursive;
+
+            font-size: 45px;
+            font-weight: 400;
+
+            line-height: 1;
+
+            letter-spacing: 7px;
+
+            white-space: nowrap;
+
+            text-shadow:
+                0 0 5px #ffffff,
+                0 0 10px #c00000,
+                0 0 20px #c00000,
+                0 0 35px #700000;
+        }
+
+
+        /* ==============================
+           TEXT BOX
+           ============================== */
+
+        .fragmented .content {
+            display: block;
+
+            width: 400px;
+            min-width: 400px;
+            max-width: 400px;
+
+            height: 280px;
+            min-height: 280px;
+            max-height: 280px;
+
+            margin: 0;
+
+            padding: 25px 30px;
+
+            box-sizing: border-box;
+
+            background: rgba(57, 0, 0, 0.88);
+
+            color: #e6dada;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            text-align: justify;
+
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            border: 2px solid transparent;
+
+            border-image:
+                linear-gradient(
+                    135deg,
+                    #300000,
+                    #a30000,
+                    #d4a84f,
+                    #a30000,
+                    #300000
+                ) 1;
+        }
+
+
+        /* ==============================
+           QUOTE
+           ============================== */
+
+        .fragmented .quote {
+            display: block;
+
+            width: 400px;
+            height: auto;
+
+            position: relative;
+
+            left: 0;
+            top: 0;
+
+            margin: 8px 0 0 0;
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-align: center;
+
+            color: #ad9c9a;
+
+            font-family: "Protest Revolution", cursive;
+
+            font-size: 18px;
+            font-weight: 400;
+
+            line-height: 1.25;
+
+            white-space: normal;
+
+            text-shadow:
+                0 0 5px #000000,
+                0 0 10px #5c3935,
+                0 0 15px #330703;
+        }
+
+
+        /* ==============================
+           HIDE TEXT BOX SCROLLBAR
+           ============================== */
+
+        .fragmented .content::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        .fragmented .content {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+
+        /* ==============================
+           PAGE
+           ============================== */
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background: #0b0b0b;
+        }
+
+    </style>
+
 </head>
 
+
 <body>
+
 
     <div class="fragmented">
 
         <div class="content-area">
 
+
             <!-- TITLE -->
+
             <div class="title">
                 Dulce Nocturne
             </div>
 
+
             <!-- TEXT BOX -->
+
             <div class="content">
+
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Qui sint mollitia similique voluptate deleniti. Non dolor autem quibusdam dolor soluta dolorem occaecat nisi quis dolores. Cillum deleniti officia mollitia similique amet pariatur commodo culpa id fuga qui.
 
                 <br><br>
@@ -39,21 +249,28 @@
                 <br><br>
 
                 Et irure excepteur laboris et molestias facilis praesentium eiusmod eligendi. Consectetur esse officia id dolorum eum consequat et ipsum eu id qui culpa. Cillum similique in illum occaecat in nisi in excepteur quod. Id omnis eos expedita dolore commodo soluta sed qui corrupti nam animi.
+
             </div>
 
+
             <!-- QUOTE -->
+
             <div class="quote">
+
                 Oh, drunken gods of slaughter
                 <br>
                 you know I've always been your
                 <br>
                 favorite daughter
+
             </div>
+
 
         </div>
 
     </div>
 
+
 </body>
+
 </html>
-```
