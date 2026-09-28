@@ -53,12 +53,9 @@ body {
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-
     line-height: 1.7;
     text-align: justify;
-
     overflow-y: auto;
-
     /* Gradient border */
     border: 2px solid transparent;
     border-image: linear-gradient(
@@ -69,31 +66,32 @@ body {
         #a30000,
         #300000
     ) 1;
+    text-shadow:
+    0 0 3px #ffffff,
+    0 0 6px #b30000,
+    0 0 10px #5c0000;
 }
 
 /* TITLE */
 .title {
     position: absolute;
-
     left: 5px;
     top: 68px;
-
     width: 250px;
-
     color: #c89b3c;
-
     font-family: "My Soul", cursive;
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
-
     letter-spacing: 5px;
     text-transform: uppercase;
     white-space: nowrap;
-
     text-shadow:
         0 0 5px #000,
         0 0 12px #000;
+    position: relative;
+z-index: 2;
+margin-bottom: -12px;
 }
 
 /* QUOTE */
