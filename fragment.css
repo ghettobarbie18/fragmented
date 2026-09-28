@@ -8,8 +8,8 @@ body {
 /* MAIN BACKGROUND */
 .fragmented {
     position: relative;
-    width: 650px;
-    height: 600px;
+    width: 750px;
+    height: 800px;
     margin: 40px auto;
 
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
@@ -65,7 +65,7 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
 
-    transform: rotate(-45deg);
+    transform: rotate(90deg);
     transform-origin: center center;
 
     text-shadow:
@@ -87,7 +87,7 @@ body {
     font-style: italic;
     white-space: nowrap;
 
-    transform: rotate(-45deg);
+    transform: rotate(90deg);
     transform-origin: center center;
 
     text-shadow:
