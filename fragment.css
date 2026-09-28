@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 body {
     margin: 0;
     padding: 40px 0;
@@ -100,6 +101,7 @@ body {
     color: #d8caca;
     font-size: 14px;
     font-style: italic;
+    font-family: "Splash", cursive;
     white-space: nowrap;
 
     transform: rotate(90deg);
