@@ -1,145 +1,99 @@
-```css
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
-
-body {
-    margin: 0;
-    padding: 40px 0;
-    background: #080808;
-    font-family: Georgia, serif;
-}
-
-/* MAIN BACKGROUND */
-.fragmented {
-    position: relative;
-    width: 900px;
-    height: 950px;
-    margin: 40px auto;
-
-    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    overflow: visible;
-}
-
-/* CENTER CONTENT AREA */
+/* CONTENT GROUP */
 .content-area {
     position: absolute;
     width: 400px;
-    margin-top: 240px;
-
     left: 50%;
-    top: 80%;
-
+    top: 78%;
     transform: translate(-50%, -50%);
 }
 
-/* SCROLLING TEXT BOX */
+
+/* TITLE */
+.title {
+    width: 100%;
+
+    margin-bottom: -12px;
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    color: #c89b3c;
+
+    font-family: "My Soul", cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 0 5px #000,
+        0 0 12px #000,
+        0 0 20px #300000;
+}
+
+
+/* TEXT BOX */
 .content {
     width: 400px;
     height: 300px;
 
-    padding: 18px 22px;
+    padding: 25px 30px;
+
     box-sizing: border-box;
-    margin-top: 240px;
 
     background: rgba(57, 0, 0, 0.88);
+
     color: #e6dada;
 
-    /* BODY FONT */
-    font-family: "My Soul", cursive;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
     line-height: 1.7;
+
     text-align: justify;
+
     overflow-y: auto;
-    /* Gradient border */
+
     border: 2px solid transparent;
-    border-image: linear-gradient(
-        135deg,
-        #300000,
-        #a30000,
-        #d4a84f,
-        #a30000,
-        #300000
-    ) 1;
+
+    border-image:
+        linear-gradient(
+            135deg,
+            #300000,
+            #a30000,
+            #d4a84f,
+            #a30000,
+            #300000
+        ) 1;
+
+    /* TEXT GLOW */
     text-shadow:
-    0 0 3px #ffffff,
-    0 0 6px #b30000,
-    0 0 10px #5c0000;
+        0 0 3px #ffffff,
+        0 0 6px #b30000,
+        0 0 10px #5c0000;
 }
 
-/* TITLE */
-.title {
-    position: absolute;
-    left: 5px;
-    top: 68px;
-    width: 250px;
-    color: #c89b3c;
-    font-family: "My Soul", cursive;
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    text-shadow:
-        0 0 5px #000,
-        0 0 12px #000;
-    position: relative;
-z-index: 2;
-margin-bottom: -12px;
-}
 
 /* QUOTE */
 .quote {
-    position: absolute;
+    width: 100%;
 
-    right: 20px;
-    bottom: 250px;
+    margin-top: 5px;
 
-    width: 250px;
+    text-align: center;
 
     color: #d8caca;
 
     font-family: "Splash", cursive;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 22px;
 
     white-space: nowrap;
 
     text-shadow:
         0 0 5px #000,
-        0 0 10px #000;
+        0 0 10px #000,
+        0 0 15px #300000;
 }
-
-/* OPTIONAL FONT CLASSES */
-.splash-regular {
-    font-family: "Splash", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.my-soul-regular {
-    font-family: "My Soul", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* SCROLLBAR */
-.content::-webkit-scrollbar {
-    width: 6px;
-}
-
-.content::-webkit-scrollbar-track {
-    background: #160000;
-}
-
-.content::-webkit-scrollbar-thumb {
-    background: #6e0000;
-}
-```
