@@ -1,62 +1,105 @@
-body {
-    margin: 0;
-    padding: 40px 0;
-    background: #080808;
-    font-family: Georgia, serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Protest+Revolution&display=swap');
 
-
-/* MAIN TEMPLATE */
 .fragmented {
-    position: relative !important;
-    width: 900px !important;
-    height: 950px !important;
-    margin: 40px auto !important;
+position: relative !important;
 
-    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png") !important;
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+```
+width: 900px !important;
+height: 950px !important;
+
+margin: 40px auto !important;
+padding: 0 !important;
+
+background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png") !important;
+background-size: contain !important;
+background-position: center !important;
+background-repeat: no-repeat !important;
+```
+
 }
 
+/* CONTENT GROUP */
 .fragmented .content-area {
-    position: absolute !important;
-    width: 400px !important;
-    left: 50% !important;
-    top: 70% !important;
-    transform: translate(-50%, -50%) !important;
+position: absolute !important;
+
+```
+width: 400px !important;
+
+left: 50% !important;
+top: 70% !important;
+
+margin: 0 !important;
+padding: 0 !important;
+
+transform: translate(-50%, -50%) !important;
+```
+
 }
 
+/* TITLE */
 .fragmented .title {
-    width: 100% !important;
-    margin-bottom: -25px !important;
+display: block !important;
 
-    color: #c89b3c !important;
-    font-family: Georgia, serif !important;
-    font-size: 45px !important;
-    letter-spacing: 7px !important;
-    text-align: left !important;
-    white-space: nowrap !important;
+```
+width: 400px !important;
+height: auto !important;
+
+margin: 0 0 -25px 0 !important;
+padding: 0 !important;
+
+position: relative !important;
+z-index: 5 !important;
+
+text-align: left !important;
+
+color: #c89b3c !important;
+
+font-family: "My Soul", cursive !important;
+font-size: 45px !important;
+font-weight: 400 !important;
+line-height: 1 !important;
+
+letter-spacing: 7px !important;
+white-space: nowrap !important;
+
+text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #c00000,
+    0 0 20px #c00000,
+    0 0 35px #700000 !important;
+```
+
 }
 
+/* TEXT BOX */
 .fragmented .content {
-    width: 400px !important;
-    height: 280px !important;
-    padding: 25px 30px !important;
-    box-sizing: border-box !important;
+display: block !important;
 
-    background: rgba(57, 0, 0, 0.88) !important;
-    color: #e6dada !important;
+```
+width: 400px !important;
+height: 280px !important;
 
-    font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 14px !important;
-    line-height: 1.7 !important;
-    text-align: justify !important;
+margin: 0 !important;
+padding: 25px 30px !important;
 
-    overflow-y: auto !important;
+box-sizing: border-box !important;
 
-    border: 2px solid transparent !important;
-    border-image: linear-gradient(
+background: rgba(57, 0, 0, 0.88) !important;
+
+color: #e6dada !important;
+
+font-family: Georgia, "Times New Roman", serif !important;
+font-size: 14px !important;
+line-height: 1.7 !important;
+
+text-align: justify !important;
+
+overflow-y: auto !important;
+
+border: 2px solid transparent !important;
+
+border-image:
+    linear-gradient(
         135deg,
         #300000,
         #a30000,
@@ -64,34 +107,48 @@ body {
         #a30000,
         #300000
     ) 1 !important;
+```
+
 }
 
+/* QUOTE */
 .fragmented .quote {
-    width: 100% !important;
-    margin-top: 0 !important;
+display: block !important;
 
-    color: #ad9c9a !important;
-    font-family: Georgia, serif !important;
-    font-size: 18px !important;
-    text-align: center !important;
+```
+width: 400px !important;
 
-    white-space: nowrap !important;
+margin: 8px 0 0 0 !important;
+padding: 0 !important;
+
+box-sizing: border-box !important;
+
+text-align: center !important;
+
+color: #ad9c9a !important;
+
+font-family: "Protest Revolution", cursive !important;
+font-size: 18px !important;
+font-weight: 400 !important;
+line-height: 1.25 !important;
+
+white-space: normal !important;
+
+text-shadow:
+    0 0 5px #000000,
+    0 0 10px #5c3935,
+    0 0 15px #330703 !important;
+```
+
 }
 
-/* SCROLLBAR */
-.content::-webkit-scrollbar {
-    width: 6px;
+/* HIDE SCROLLBAR */
+.fragmented .content::-webkit-scrollbar {
+width: 0 !important;
+height: 0 !important;
 }
 
-.content::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.content::-webkit-scrollbar-thumb {
-    background: transparent;
-}
-
-.content {
-    scrollbar-width: none;
-    -ms-overflow-style: none;;
+.fragmented .content {
+scrollbar-width: none !important;
+-ms-overflow-style: none !important;
 }
