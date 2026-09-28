@@ -3,7 +3,7 @@ body {
     padding: 60px 0;
     background: #080000;
     width:580px;
-    height:800px;
+    height:850px;
     font-family: Georgia, serif;
 }
 
@@ -15,7 +15,7 @@ body {
 .fragmented {
     position: relative;
     width: 580px;
-    height: 800px;
+    height: 850px;
     margin: 60px auto;
     box-sizing: border-box;
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
@@ -60,6 +60,7 @@ body {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 6px;
+    margin-top:400px;
     text-transform: uppercase;
     transform: rotate(-90deg);
     transform-origin: center center;
@@ -96,6 +97,7 @@ body {
     height: 250px;
     box-sizing: border-box;
     padding: 18px 22px;
+    margin:auto;
     background: rgba(57, 0, 0, 0.88);
     color: #e6d6d6;
     font-size: 14px;
