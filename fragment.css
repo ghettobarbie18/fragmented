@@ -8,8 +8,8 @@ body {
 /* MAIN BACKGROUND */
 .fragmented {
     position: relative;
-    width: 750px;
-    height: 800px;
+    width: 800px;
+    height: 900px;
     margin: 40px auto;
 
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
@@ -47,6 +47,17 @@ body {
     text-align: justify;
 
     overflow-y: auto;
+
+    /* Gradient border */
+    border: 2px solid transparent;
+    border-image: linear-gradient(
+        135deg,
+        #300000,
+        #a30000,
+        #d4a84f,
+        #a30000,
+        #300000
+    ) 1;
 }
 
 /* TITLE - LEFT DIAGONAL */
