@@ -12,23 +12,19 @@ body {
 
 .fragmented {
     position: relative;
-
     width: 650px;
     height: 600px;
-
     margin: 60px auto;
-
     box-sizing: border-box;
 
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
     justify-content: center;
 }
-
 
 /* =================================
    CONTENT AREA
