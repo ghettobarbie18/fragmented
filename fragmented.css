@@ -35,20 +35,39 @@ background-repeat: no-repeat !important;
 
 /* TITLE */
 .fragmented .title {
-    display: block !important;
-    width: 400px !important;
-    margin: 0 0 -25px 0 !important;
-    padding: 0 !important;
+display: block !important;
 
-    text-align: left !important;
+width: 400px !important;
+height: auto !important;
 
-    font-family: "My Soul", cursive !important;
-    font-size: 45px !important;
-    font-weight: 400 !important;
-    line-height: 1 !important;
-    letter-spacing: 7px !important;
+position: relative !important;
+left: 0 !important;
+top: 0 !important;
 
-    white-space: nowrap !important;
+margin: 0 0 -25px 0 !important;
+padding: 0 !important;
+
+box-sizing: border-box !important;
+
+text-align: left !important;
+
+color: #c89b3c !important;
+
+font-family: "My Soul", cursive !important;
+font-size: 45px !important;
+font-weight: 400 !important;
+line-height: 1 !important;
+
+letter-spacing: 7px !important;
+
+white-space: nowrap !important;
+
+text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #c00000,
+    0 0 20px #c00000,
+    0 0 35px #700000 !important;
+
 }
 
 .fragmented .content {
@@ -93,23 +112,38 @@ background-repeat: no-repeat !important;
         ) 1 !important;
 }
 
+/* QUOTE */
 .fragmented .quote {
-    display: block !important;
-    width: 400px !important;
+display: block !important;
 
-    margin: 8px 0 0 0 !important;
-    padding: 0 !important;
+width: 400px !important;
+height: auto !important;
 
-    box-sizing: border-box !important;
+position: relative !important;
+left: 0 !important;
+top: 0 !important;
 
-    text-align: center !important;
+margin: 8px 0 0 0 !important;
+padding: 0 !important;
 
-    font-family: "Protest Revolution", cursive !important;
-    font-size: 18px !important;
-    font-weight: 400 !important;
-    line-height: 1.25 !important;
+box-sizing: border-box !important;
 
-    white-space: normal !important;
+text-align: center !important;
+
+color: #ad9c9a !important;
+
+font-family: "Protest Revolution", cursive !important;
+font-size: 18px !important;
+font-weight: 400 !important;
+line-height: 1.25 !important;
+
+white-space: normal !important;
+
+text-shadow:
+    0 0 5px #000000,
+    0 0 10px #5c3935,
+    0 0 15px #330703 !important;
+
 }
 
 /* HIDE SCROLLBAR */
