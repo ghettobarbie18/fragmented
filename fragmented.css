@@ -9,53 +9,32 @@ body {
 /* MAIN TEMPLATE */
 .fragmented {
     position: relative;
-
     width: 900px;
     height: 950px;
-
     margin: 40px auto;
 
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
-
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
-    overflow: visible;
 }
 
-
-/* CONTENT GROUP */
-.content-area {
+.fragmented-content-area {
     position: absolute;
-
     width: 400px;
-
     left: 50%;
     top: 70%;
-
     transform: translate(-50%, -50%);
 }
 
-
-/* TITLE */
-.title {
+.fragmented-title {
     width: 100%;
-
     margin-bottom: -25px;
-
-    position: relative;
-    z-index: 2;
-
-    text-align: left;
 
     color: #c89b3c;
 
     font-family: "My Soul", cursive;
-
     font-size: 45px;
-    font-weight: 400;
-
     letter-spacing: 7px;
 
     white-space: nowrap;
@@ -67,14 +46,11 @@ body {
         0 0 35px #700000;
 }
 
-
-/* TEXT BOX */
-.content {
+.fragmented-content {
     width: 400px;
     height: 280px;
 
     padding: 25px 30px;
-
     box-sizing: border-box;
 
     background: rgba(57, 0, 0, 0.88);
@@ -82,9 +58,7 @@ body {
     color: #e6dada;
 
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 14px;
-
     line-height: 1.7;
 
     text-align: justify;
@@ -104,23 +78,17 @@ body {
         ) 1;
 }
 
-/* QUOTE */
-.quote {
+.fragmented-quote {
     width: 100%;
-    margin-top: 13px;
+    margin-top: 0;
 
     text-align: center;
 
     color: #ad9c9a;
 
     font-family: "Protest Revolution", cursive;
-
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: 3px;
-    word-spacing: 1px;
-
-    white-space: nowrap;
 
     text-shadow:
         0 0 5px #000,
