@@ -1,5 +1,7 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
 body {
     margin: 0;
     padding: 40px 0;
@@ -26,7 +28,7 @@ body {
 .content-area {
     position: absolute;
     width: 400px;
-    margin-top:200px;
+    margin-top: 200px;
 
     left: 50%;
     top: 50%;
@@ -41,12 +43,17 @@ body {
 
     padding: 18px 22px;
     box-sizing: border-box;
-    margin-top:200px;
+    margin-top: 200px;
 
     background: rgba(57, 0, 0, 0.88);
     color: #e6dada;
 
-    font-size: 14px;
+    /* BODY FONT */
+    font-family: "My Soul", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+
     line-height: 1.7;
     text-align: justify;
 
@@ -62,22 +69,9 @@ body {
         #a30000,
         #300000
     ) 1;
-
-    .splash-regular {
-  font-family: "Splash", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
-    .my-soul-regular {
-  font-family: "My Soul", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-}
-
-/* TITLE - LEFT DIAGONAL */
+/* TITLE */
 .title {
     position: absolute;
 
@@ -87,9 +81,12 @@ body {
     width: 250px;
 
     color: #c89b3c;
-    font-size: 30px;
-    font-weight: bold;
+
     font-family: "My Soul", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+
     letter-spacing: 5px;
     text-transform: uppercase;
     white-space: nowrap;
@@ -99,7 +96,7 @@ body {
         0 0 12px #000;
 }
 
-/* QUOTE - RIGHT DIAGONAL */
+/* QUOTE */
 .quote {
     position: absolute;
 
@@ -109,14 +106,30 @@ body {
     width: 250px;
 
     color: #d8caca;
-    font-size: 14px;
-    font-style: italic;
+
     font-family: "Splash", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+
     white-space: nowrap;
 
     text-shadow:
         0 0 5px #000,
         0 0 10px #000;
+}
+
+/* OPTIONAL FONT CLASSES */
+.splash-regular {
+    font-family: "Splash", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.my-soul-regular {
+    font-family: "My Soul", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* SCROLLBAR */
@@ -131,3 +144,4 @@ body {
 .content::-webkit-scrollbar-thumb {
     background: #6e0000;
 }
+```
