@@ -71,42 +71,45 @@ text-shadow:
 
 /* TEXT BOX */
 .fragmented .content {
-display: block !important;
+    display: block !important;
 
-```
-width: 400px !important;
-height: 280px !important;
+    width: 400px !important;
+    min-width: 400px !important;
+    max-width: 400px !important;
 
-margin: 0 !important;
-padding: 25px 30px !important;
+    height: 280px !important;
+    min-height: 280px !important;
+    max-height: 280px !important;
 
-box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 25px 30px !important;
 
-background: rgba(57, 0, 0, 0.88) !important;
+    box-sizing: border-box !important;
 
-color: #e6dada !important;
+    background: rgba(57, 0, 0, 0.88) !important;
 
-font-family: Georgia, "Times New Roman", serif !important;
-font-size: 14px !important;
-line-height: 1.7 !important;
+    color: #e6dada !important;
 
-text-align: justify !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
 
-overflow-y: auto !important;
+    text-align: justify !important;
 
-border: 2px solid transparent !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
 
-border-image:
-    linear-gradient(
-        135deg,
-        #300000,
-        #a30000,
-        #d4a84f,
-        #a30000,
-        #300000
-    ) 1 !important;
-```
+    border: 2px solid transparent !important;
 
+    border-image:
+        linear-gradient(
+            135deg,
+            #300000,
+            #a30000,
+            #d4a84f,
+            #a30000,
+            #300000
+        ) 1 !important;
 }
 
 /* QUOTE */
