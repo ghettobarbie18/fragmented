@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 body {
     margin: 0;
@@ -69,6 +69,12 @@ body {
   font-style: normal;
 }
 
+    .my-soul-regular {
+  font-family: "My Soul", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 }
 
 /* TITLE - LEFT DIAGONAL */
@@ -83,7 +89,7 @@ body {
     color: #c89b3c;
     font-size: 30px;
     font-weight: bold;
-    font-family: "Cherish", cursive;
+    font-family: "My Soul", cursive;
     letter-spacing: 5px;
     text-transform: uppercase;
     white-space: nowrap;
