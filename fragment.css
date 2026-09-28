@@ -14,10 +14,10 @@
 
     background: linear-gradient(
         180deg,
-        #ff0000,
-        #ffbd00,
-        #8b0000,
-        #ff0000
+        #4e0404,
+        #643e05,
+        #74750b,
+        #499911
     );
 
     clip-path: polygon(
@@ -43,7 +43,7 @@
 
     box-sizing: border-box;
 
-    background-image: url("YOUR-IMAGE-URL-HERE");
+    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
