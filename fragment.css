@@ -137,14 +137,14 @@ body {
 }
 
 .content::-webkit-scrollbar-track {
-    background: #160000;
+    background: transparent;
 }
 
 .content::-webkit-scrollbar-thumb {
-    background: #6e0000;
+    background: transparent;
 }
 
 .content {
     scrollbar-width: thin;
-    scrollbar-color: #6e0000 #160000;
+    scrollbar-color: transparent;
 }
