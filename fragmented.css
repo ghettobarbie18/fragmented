@@ -36,40 +36,22 @@ transform: translate(-50%, -50%) !important;
 
 /* TITLE */
 .fragmented .title {
-display: block !important;
+    display: block !important;
+    width: 400px !important;
+    margin: 0 0 -25px 0 !important;
+    padding: 0 !important;
 
-```
-width: 400px !important;
-height: auto !important;
+    text-align: left !important;
 
-margin: 0 0 -25px 0 !important;
-padding: 0 !important;
+    font-family: "My Soul", cursive !important;
+    font-size: 45px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    letter-spacing: 7px !important;
 
-position: relative !important;
-z-index: 5 !important;
-
-text-align: left !important;
-
-color: #c89b3c !important;
-
-font-family: "My Soul", cursive !important;
-font-size: 45px !important;
-font-weight: 400 !important;
-line-height: 1 !important;
-
-letter-spacing: 7px !important;
-white-space: nowrap !important;
-
-text-shadow:
-    0 0 5px #ffffff,
-    0 0 10px #c00000,
-    0 0 20px #c00000,
-    0 0 35px #700000 !important;
-```
-
+    white-space: nowrap !important;
 }
 
-/* TEXT BOX */
 .fragmented .content {
     display: block !important;
 
@@ -112,35 +94,23 @@ text-shadow:
         ) 1 !important;
 }
 
-/* QUOTE */
 .fragmented .quote {
-display: block !important;
+    display: block !important;
+    width: 400px !important;
 
-```
-width: 400px !important;
+    margin: 8px 0 0 0 !important;
+    padding: 0 !important;
 
-margin: 8px 0 0 0 !important;
-padding: 0 !important;
+    box-sizing: border-box !important;
 
-box-sizing: border-box !important;
+    text-align: center !important;
 
-text-align: center !important;
+    font-family: "Protest Revolution", cursive !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
 
-color: #ad9c9a !important;
-
-font-family: "Protest Revolution", cursive !important;
-font-size: 18px !important;
-font-weight: 400 !important;
-line-height: 1.25 !important;
-
-white-space: normal !important;
-
-text-shadow:
-    0 0 5px #000000,
-    0 0 10px #5c3935,
-    0 0 15px #330703 !important;
-```
-
+    white-space: normal !important;
 }
 
 /* HIDE SCROLLBAR */
