@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,15 +23,13 @@
         body {
             margin: 0;
             padding: 40px 0;
-
             background: #080808;
-
             font-family: Georgia, serif;
         }
 
 
         /* =========================
-           MAIN TEMPLATE BACKGROUND
+           MAIN TEMPLATE
         ========================= */
 
         .fragmented {
@@ -52,7 +51,7 @@
 
 
         /* =========================
-           CENTER CONTENT
+           CONTENT AREA
         ========================= */
 
         .content-area {
@@ -61,7 +60,7 @@
             width: 400px;
 
             left: 50%;
-            top: 50%;
+            top: 68%;
 
             transform: translate(-50%, -50%);
         }
@@ -69,12 +68,9 @@
 
         /* =========================
            TITLE
-           ABOVE TEXT BOX
         ========================= */
 
         .title {
-            position: relative;
-
             width: 100%;
 
             margin-bottom: 15px;
@@ -101,7 +97,7 @@
 
 
         /* =========================
-           MAIN SCROLLING TEXT BOX
+           TEXT BOX
         ========================= */
 
         .content {
@@ -119,8 +115,6 @@
             font-family: Georgia, "Times New Roman", serif;
 
             font-size: 14px;
-
-            font-weight: normal;
 
             line-height: 1.7;
 
@@ -140,27 +134,14 @@
                     #a30000,
                     #300000
                 ) 1;
-
-            /* Pointed Top And Bottom */
-            clip-path: polygon(
-                0 8%,
-                50% 0,
-                100% 8%,
-                100% 92%,
-                50% 100%,
-                0 92%
-            );
         }
 
 
         /* =========================
            QUOTE
-           BELOW TEXT BOX
         ========================= */
 
         .quote {
-            position: relative;
-
             width: 100%;
 
             margin-top: 15px;
@@ -202,18 +183,12 @@
             background: #6e0000;
         }
 
-
-        /* =========================
-           FIREFOX SCROLLBAR
-        ========================= */
-
         .content {
             scrollbar-width: thin;
             scrollbar-color: #6e0000 #160000;
         }
 
     </style>
-
 </head>
 
 
@@ -223,20 +198,13 @@
 
         <div class="content-area">
 
-
-            <!-- =====================
-                 TITLE
-            ====================== -->
-
+            <!-- TITLE -->
             <div class="title">
                 Dulce Nocturne
             </div>
 
 
-            <!-- =====================
-                 TEXT BOX
-            ====================== -->
-
+            <!-- TEXT BOX -->
             <div class="content">
 
                 <p>
@@ -262,9 +230,15 @@
             </div>
 
 
-            <!-- =====================
-                 QUOTE
-            ====================== -->
-
+            <!-- QUOTE -->
             <div class="quote">
                 Some things are better left fragmented.
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
