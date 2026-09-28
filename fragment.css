@@ -107,7 +107,7 @@ body {
 /* QUOTE */
 .quote {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 5px;
 
     text-align: center;
 
@@ -115,8 +115,9 @@ body {
 
     font-family: "Protest Revolution", cursive;
 
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
+    letter-spacing:2px;
 
     white-space: nowrap;
 
