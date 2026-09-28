@@ -24,6 +24,7 @@ body {
 .content-area {
     position: absolute;
     width: 400px;
+    margin-top:400px;
 
     left: 50%;
     top: 50%;
@@ -38,6 +39,7 @@ body {
 
     padding: 18px 22px;
     box-sizing: border-box;
+    margin-top:400px;
 
     background: rgba(57, 0, 0, 0.88);
     color: #e6dada;
@@ -58,15 +60,6 @@ body {
         #a30000,
         #300000
     ) 1;
-
-    clip-path: polygon(
-        0 8%,
-        50% 0,
-        100% 8%,
-        100% 92%,
-        50% 100%,
-        0 92%
-    );
 }
 
 /* TITLE - LEFT DIAGONAL */
@@ -74,7 +67,7 @@ body {
     position: absolute;
 
     left: -125px;
-    top: -45px;
+    top: 200px;
 
     width: 250px;
 
@@ -98,7 +91,7 @@ body {
     position: absolute;
 
     right: -125px;
-    bottom: -45px;
+    bottom: 200px;
 
     width: 250px;
 
