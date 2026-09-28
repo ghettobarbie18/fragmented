@@ -17,100 +17,114 @@ body {
 
 /* =================================
    MAIN TEMPLATE
-   POINTED TOP + BOTTOM
-   STRAIGHT SIDES
    ================================= */
 
 .fragmented {
     position: relative;
 
-    width: 580px;
-    height: 700px;
+    width: 650px;
+    height: 600px;
 
     margin: 60px auto;
 
     box-sizing: border-box;
 
     /* BACKGROUND IMAGE */
-    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg.png");
+    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    /* POINTED TOP + BOTTOM / STRAIGHT SIDES */
-   clip-path: polygon(
-    50% 0%,
-    100% 12%,
-    100% 88%,
-    50% 100%,
-    0% 88%,
-    0% 12%
-);
-
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 
 /* =================================
-   INNER CONTENT
+   CONTENT AREA
    ================================= */
 
 .content-area {
     position: relative;
     z-index: 2;
-    width: 480px;
-    padding: 20px 35px;
+
+    width: 540px;
+
+    margin-top: 150px;
+
     box-sizing: border-box;
+
     text-align: center;
-        /* MOVE CONTENT DOWN */
-    transform: translateY(60px);
 }
 
 
 /* =================================
-   TITLE
+   TITLE + QUOTE ROW
+   ================================= */
+
+.heading-row {
+    display: flex;
+
+    width: 100%;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   TITLE — LEFT SIDE
    ================================= */
 
 .title {
+    width: 50%;
+
     color: #ffb000;
 
     font-size: 32px;
     font-weight: bold;
 
     letter-spacing: 6px;
+
     text-transform: uppercase;
+
+    text-align: left;
 
     text-shadow:
         0 0 5px #ff0000,
         0 0 12px #8b0000;
-
-    margin-bottom: 15px;
 }
 
 
 /* =================================
-   QUOTE
+   QUOTE — RIGHT SIDE
    ================================= */
 
 .quote {
+    width: 50%;
+
     color: #d8c7c7;
 
     font-size: 14px;
+
     font-style: italic;
 
-    margin-bottom: 20px;
+    text-align: right;
+
+    padding-left: 20px;
+
+    box-sizing: border-box;
 }
 
 
 /* =================================
    BODY TEXT BOX
-   LEFT + RIGHT GRADIENT BORDERS
    ================================= */
 
 .content {
     width: 100%;
+
     height: 250px;
 
     box-sizing: border-box;
@@ -119,28 +133,13 @@ body {
 
     background: rgba(57, 0, 0, 0.88);
 
-    /* LEFT + RIGHT ONLY */
-    border-left: 1px solid;
-    border-right: 1px solid;
-
-    border-image:
-        linear-gradient(
-            to bottom,
-            #390000,
-            #8b0000,
-            #ff0000,
-            #ffbd00,
-            #8b0000,
-            #390000
-        ) 1;
-
     color: #e6d6d6;
 
     font-size: 14px;
 
     line-height: 1.7;
 
-    /* JUSTIFIED BODY TEXT */
+    /* JUSTIFIED TEXT */
     text-align: justify;
 
     /* SCROLLING */
@@ -158,15 +157,15 @@ body {
 }
 
 .content::-webkit-scrollbar-track {
-    background: transparent;
+    background: #160000;
 }
 
 .content::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: #8b0000;
 }
 
 .content::-webkit-scrollbar-thumb:hover {
-    background: transparent;
+    background: #c00000;
 }
 
 </style>
@@ -179,24 +178,34 @@ body {
 
     <div class="content-area">
 
-        <div class="title">
-            FRAGMENTED
+        <div class="heading-row">
+
+            <div class="title">
+                FRAGMENTED
+            </div>
+
+            <div class="quote">
+                Beauty born from darkness.
+            </div>
+
         </div>
 
-        <div class="quote">
-            Beauty born from darkness.
-        </div>
 
         <div class="content">
+
             Your text goes here.
 
             Your character information, biography,
-            plot, or other writing can go here.
+            plot, or other writing can sit inside
+            this separate box.
+
+            The body text is justified and will
+            automatically scroll when it reaches
+            the maximum height of the box.
+
         </div>
 
     </div>
-
-</div>
 
 </div>
 
