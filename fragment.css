@@ -28,7 +28,7 @@ body {
 .content-area {
     position: absolute;
     width: 400px;
-    margin-top: 200px;
+    margin-top: 300px;
 
     left: 50%;
     top: 80%;
@@ -43,7 +43,7 @@ body {
 
     padding: 18px 22px;
     box-sizing: border-box;
-    margin-top: 200px;
+    margin-top: 300px;
 
     background: rgba(57, 0, 0, 0.88);
     color: #e6dada;
