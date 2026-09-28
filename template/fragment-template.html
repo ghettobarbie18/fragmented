@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,183 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
 
-    <style>
-
-        /* =========================
-           PAGE
-        ========================= */
-
-        body {
-            margin: 0;
-            padding: 40px 0;
-            background: #080808;
-            font-family: Georgia, serif;
-        }
-
-
-        /* =========================
-           MAIN TEMPLATE
-        ========================= */
-
-        .fragmented {
-            position: relative;
-
-            width: 900px;
-            height: 950px;
-
-            margin: 40px auto;
-
-            background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
-
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            overflow: visible;
-        }
-
-
-        /* =========================
-           CONTENT AREA
-        ========================= */
-
-        .content-area {
-            position: absolute;
-
-            width: 400px;
-
-            left: 50%;
-            top: 80%;
-
-            transform: translate(-50%, -50%);
-        }
-
-
-        /* =========================
-           TITLE
-        ========================= */
-
-        .title {
-            width: 100%;
-
-            margin-bottom: 0px;
-
-            text-align: left;
-
-            color: #c89b3c;
-
-            font-family: "My Soul", cursive;
-
-            font-size: 36px;
-            font-weight: 400;
-            font-style: normal;
-
-            letter-spacing: 4px;
-
-            white-space: nowrap;
-
-            text-shadow:
-                0 0 5px #000,
-                0 0 12px #000,
-                0 0 20px #300000;
-        }
-
-
-        /* =========================
-           TEXT BOX
-        ========================= */
-
-        .content {
-            width: 400px;
-            height: 300px;
-
-            padding: 25px 30px;
-
-            box-sizing: border-box;
-
-            background: rgba(57, 0, 0, 0.88);
-
-            color: #e6dada;
-
-            font-family: Georgia, "Times New Roman", serif;
-
-            font-size: 14px;
-
-            line-height: 1.7;
-
-            text-align: justify;
-
-            overflow-y: auto;
-
-            /* Gradient Border */
-            border: 2px solid transparent;
-
-            border-image:
-                linear-gradient(
-                    135deg,
-                    #300000,
-                    #a30000,
-                    #d4a84f,
-                    #a30000,
-                    #300000
-                ) 1;
-        }
-
-
-        /* =========================
-           QUOTE
-        ========================= */
-
-        .quote {
-            width: 100%;
-
-            margin-top: 0px;
-
-            text-align: center;
-
-            color: #d8caca;
-
-            font-family: "Splash", cursive;
-
-            font-size: 22px;
-
-            font-weight: 400;
-
-            font-style: normal;
-
-            white-space: nowrap;
-
-            text-shadow:
-                0 0 5px #000,
-                0 0 10px #000,
-                0 0 15px #300000;
-        }
-
-
-        /* =========================
-           SCROLLBAR
-        ========================= */
-
-        .content::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .content::-webkit-scrollbar-track {
-            background: #160000;
-        }
-
-        .content::-webkit-scrollbar-thumb {
-            background: #6e0000;
-        }
-
-        .content {
-            scrollbar-width: thin;
-            scrollbar-color: #6e0000 #160000;
-        }
-
-    </style>
+    <!-- Fragmented CSS -->
+    <link rel="stylesheet" href="https://ghettobarbie18.github.io/fragmented/fragmented.css">
 </head>
-
 
 <body>
 
@@ -198,39 +23,28 @@
 
         <div class="content-area">
 
-            <!-- TITLE -->
             <div class="title">
                 Dulce Nocturne
             </div>
 
-
-            <!-- TEXT BOX -->
             <div class="content">
 
                 <p>
-                    Your text goes here. This is the main content area
-                    where you can place your writing.
+                    Your text goes here.
                 </p>
 
                 <p>
-                    Add as much text as you want. The box will scroll
-                    vertically once the content becomes longer than
-                    the available space.
+                    Add your character information, biography,
+                    story, profile, or other writing here.
                 </p>
 
                 <p>
-                    You can replace this text with your actual character,
-                    story, profile, biography, or other content.
-                </p>
-
-                <p>
-                    Continue adding your content here.
+                    The text box will scroll automatically when
+                    the content becomes too long.
                 </p>
 
             </div>
 
-
-            <!-- QUOTE -->
             <div class="quote">
                 Some things are better left fragmented.
             </div>
@@ -241,4 +55,3 @@
 
 </body>
 </html>
-```
