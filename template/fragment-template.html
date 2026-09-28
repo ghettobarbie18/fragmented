@@ -16,8 +16,8 @@
         /* MAIN BACKGROUND */
         .fragmented {
             position: relative;
-            width: 800px;
-            height: 900px;
+            width: 900px;
+            height: 950px;
             margin: 40px auto;
 
             background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
@@ -31,7 +31,7 @@
         /* CENTER CONTENT AREA */
         .content-area {
             position: absolute;
-            width: 430px;
+            width: 250px;
 
             left: 50%;
             top: 50%;
@@ -101,6 +101,26 @@
             text-align: justify;
 
             overflow-y: auto;
+
+             /* Gradient border */
+    border: 2px solid transparent;
+    border-image: linear-gradient(
+        135deg,
+        #300000,
+        #a30000,
+        #d4a84f,
+        #a30000,
+        #300000
+    ) 1;
+
+            clip-path: polygon(
+        0 8%,
+        50% 0,
+        100% 8%,
+        100% 92%,
+        50% 100%,
+        0 92%
+    );
         }
 
         /* SCROLLBAR */
