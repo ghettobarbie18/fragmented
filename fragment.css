@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
 body {
     margin: 0;
     padding: 40px 0;
@@ -106,7 +107,7 @@ body {
 }
 
 /* QUOTE */
-.quote {
+.fragmented-quote {
     width: 100%;
 
     margin-top: 0px;
@@ -115,19 +116,19 @@ body {
 
     color: #ad9c9a;
 
-    font-family: "Protest Revolution", cursive;
+    font-family: "Protest Revolution", cursive !important;
 
     font-size: 18px;
 
     font-weight: 400;
 
     white-space: nowrap;
+
     text-shadow:
         0 0 5px #000,
         0 0 10px #5c3935,
         0 0 15px #330703;
 }
-
 
 /* SCROLLBAR */
 .content::-webkit-scrollbar {
