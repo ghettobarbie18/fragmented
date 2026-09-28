@@ -4,121 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragmented</title>
-<style>
-    body {
-        margin: 0;
-        padding: 40px 0;
-        background: #080808;
-        font-family: Georgia, serif;
-    }
-    /* MAIN BACKGROUND */
-    .fragmented {
-        position: relative;
-        width: 650px;
-        height: 600px;
-        margin: 40px auto;
-        background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        overflow: visible;
-    }
-    /* CENTER CONTENT AREA */
-    .content-area {
-        position: absolute;
-        width: 430px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    /* SCROLLING TEXT BOX */
-    .content {
-        width: 100%;
-        height: 250px;
-        padding: 18px 22px;
-        box-sizing: border-box;
-        background: rgba(57, 0, 0, 0.88);
-        color: #e6dada;
-        font-size: 14px;
-        line-height: 1.7;
-        text-align: justify;
-        overflow-y: auto;
-    }
-    /* TITLE - RIGHT SIDE */
-    .title {
-        position: absolute;
-        right: -145px;
-        top: 50px;
-        width: 250px;
-        color: #c89b3c;
-        font-size: 30px;
-        font-weight: bold;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        white-space: nowrap;
-        transform: rotate(90deg);
-        transform-origin: center center;
-        text-shadow:
-            0 0 5px #000,
-            0 0 12px #000;
-    }
-    /* QUOTE - LEFT SIDE */
-    .quote {
-        position: absolute;
-        left: -145px;
-        top: 50px;
-        width: 250px;
-        color: #d8caca;
-        font-size: 14px;
-        font-style: italic;
-        white-space: nowrap;
-        transform: rotate(-90deg);
-        transform-origin: center center;
-        text-shadow:
-            0 0 5px #000,
-            0 0 10px #000;
-    }
-    /* SCROLLBAR */
-    .content::-webkit-scrollbar {
-        width: 6px;
-    }
-    .content::-webkit-scrollbar-track {
-        background: #160000;
-    }
-    .content::-webkit-scrollbar-thumb {
-        background: #6e0000;
-    }
-</style>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 0;
+            background: #080808;
+            font-family: Georgia, serif;
+        }
+
+        /* MAIN BACKGROUND */
+        .fragmented {
+            position: relative;
+            width: 650px;
+            height: 600px;
+            margin: 40px auto;
+
+            background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: visible;
+        }
+
+        /* CENTER CONTENT AREA */
+        .content-area {
+            position: absolute;
+            width: 430px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        /* TITLE - LEFT DIAGONAL */
+        .title {
+            position: absolute;
+
+            left: -125px;
+            top: -45px;
+
+            width: 250px;
+
+            color: #c89b3c;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            transform: rotate(-45deg);
+            transform-origin: center center;
+
+            text-shadow:
+                0 0 5px #000,
+                0 0 12px #000;
+        }
+
+        /* QUOTE - RIGHT DIAGONAL */
+        .quote {
+            position: absolute;
+
+            right: -125px;
+            bottom: -45px;
+
+            width: 250px;
+
+            color: #d8caca;
+            font-size: 14px;
+            font-style: italic;
+            white-space: nowrap;
+
+            transform: rotate(-45deg);
+            transform-origin: center center;
+
+            text-shadow:
+                0 0 5px #000,
+                0 0 10px #000;
+        }
+
+        /* SCROLLING TEXT BOX */
+        .content {
+            width: 100%;
+            height: 250px;
+
+            padding: 18px 22px;
+            box-sizing: border-box;
+
+            background: rgba(57, 0, 0, 0.88);
+            color: #e6dada;
+
+            font-size: 14px;
+            line-height: 1.7;
+            text-align: justify;
+
+            overflow-y: auto;
+        }
+
+        /* SCROLLBAR */
+        .content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .content::-webkit-scrollbar-track {
+            background: #160000;
+        }
+
+        .content::-webkit-scrollbar-thumb {
+            background: #6e0000;
+        }
+    </style>
 </head>
+
 <body>
-<div class="fragmented">
-    <!-- LEFT SIDE QUOTE -->
-    <div class="quote">
-        "Some things are better left fragmented."
-    </div>
-    <!-- CENTER CONTENT -->
-    <div class="content-area">
-        <div class="content">
-            <p>
-                Your main text goes here. This area will scroll when
-                the amount of text becomes larger than the available
-                space.
-            </p>
-            <p>
-                You can add as much content as you want inside this
-                scrolling box. The background image remains behind
-                the entire design.
-            </p>
-            <p>
-                Replace this text with whatever content you want
-                displayed on your page.
-            </p>
+
+    <div class="fragmented">
+
+        <div class="content-area">
+
+            <!-- TITLE -->
+            <div class="title">
+                Fragmented
+            </div>
+
+            <!-- MAIN TEXT BOX -->
+            <div class="content">
+                <p>
+                    Your text goes here. This is the main content area
+                    where you can place your writing.
+                </p>
+
+                <p>
+                    Add as much text as you want. The box will scroll
+                    vertically once the content becomes longer than the
+                    available space.
+                </p>
+
+                <p>
+                    You can replace this text with your actual character,
+                    story, profile, or other content.
+                </p>
+            </div>
+
+            <!-- QUOTE -->
+            <div class="quote">
+                “Some things are better left fragmented.”
+            </div>
+
         </div>
+
     </div>
-    <!-- RIGHT SIDE TITLE -->
-    <div class="title">
-        Fragmented
-    </div>
-</div>
+
 </body>
 </html>
