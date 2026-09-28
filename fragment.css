@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
 body {
     margin: 0;
     padding: 40px 0;
@@ -109,7 +107,6 @@ body {
 /* QUOTE */
 .fragmented-quote {
     width: 100%;
-
     margin-top: 0px;
 
     text-align: center;
@@ -119,7 +116,6 @@ body {
     font-family: "Protest Revolution", cursive !important;
 
     font-size: 18px;
-
     font-weight: 400;
 
     white-space: nowrap;
