@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Protest+Revolution&display=swap');
 body {
     margin: 0;
     padding: 40px 0;
@@ -116,11 +115,11 @@ body {
 
     color: #ad9c9a;
 
-    font-family: "Protest Revolution", sans-serif;
+    font-family: "Protest Revolution", cursive;
 
     font-size: 18px;
 
-    font-weight: 400px;
+    font-weight: 400;
 
     white-space: nowrap;
     text-shadow:
