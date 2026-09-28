@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&display=swap');
 body {
     margin: 0;
     padding: 40px 0;
@@ -24,7 +25,7 @@ body {
 .content-area {
     position: absolute;
     width: 400px;
-    margin-top:400px;
+    margin-top:200px;
 
     left: 50%;
     top: 50%;
@@ -35,11 +36,11 @@ body {
 /* SCROLLING TEXT BOX */
 .content {
     width: 400px;
-    height: 400px;
+    height: 300px;
 
     padding: 18px 22px;
     box-sizing: border-box;
-    margin-top:400px;
+    margin-top:200px;
 
     background: rgba(57, 0, 0, 0.88);
     color: #e6dada;
@@ -67,13 +68,14 @@ body {
     position: absolute;
 
     left: -125px;
-    top: 200px;
+    top: 100px;
 
     width: 250px;
 
     color: #c89b3c;
     font-size: 30px;
     font-weight: bold;
+    font-family: "Cherish", cursive;
     letter-spacing: 5px;
     text-transform: uppercase;
     white-space: nowrap;
@@ -91,7 +93,7 @@ body {
     position: absolute;
 
     right: -125px;
-    bottom: 200px;
+    bottom: 100px;
 
     width: 250px;
 
