@@ -146,6 +146,6 @@ body {
 }
 
 .content {
-    scrollbar-width: thin;
-    scrollbar-color: transparent;
+    scrollbar-width: none;
+    -ms-overflow-style: none;;
 }
