@@ -3,7 +3,7 @@ body {
     padding: 60px 0;
     background: #080000;
     width:580px;
-    height:900px;
+    height:1000px;
     font-family: Georgia, serif;
 }
 
@@ -15,7 +15,7 @@ body {
 .fragmented {
     position: relative;
     width: 580px;
-    height: 900px;
+    height: 1000px;
     margin: 60px auto;
     box-sizing: border-box;
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/fragmented/refs/heads/main/dulcebg%20(1).png");
