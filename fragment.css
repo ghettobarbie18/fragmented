@@ -49,12 +49,12 @@ body {
     overflow-y: auto;
 }
 
-/* TITLE - RIGHT SIDE */
+/* TITLE - LEFT DIAGONAL */
 .title {
     position: absolute;
 
-    right: -145px;
-    top: 50px;
+    left: -125px;
+    top: -45px;
 
     width: 250px;
 
@@ -65,7 +65,7 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
 
-    transform: rotate(90deg);
+    transform: rotate(-45deg);
     transform-origin: center center;
 
     text-shadow:
@@ -73,12 +73,12 @@ body {
         0 0 12px #000;
 }
 
-/* QUOTE - LEFT SIDE */
+/* QUOTE - RIGHT DIAGONAL */
 .quote {
     position: absolute;
 
-    left: -145px;
-    top: 50px;
+    right: -125px;
+    bottom: -45px;
 
     width: 250px;
 
@@ -87,7 +87,7 @@ body {
     font-style: italic;
     white-space: nowrap;
 
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
     transform-origin: center center;
 
     text-shadow:
